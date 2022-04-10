@@ -11,25 +11,37 @@
       <form action="">
         <h1>Form</h1>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+        /><br />
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="name@pdx.edu" />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="name@pdx.edu"
+        /><br /><br />
         <fieldset>
           <legend>Favorite Character</legend>
           <input type="radio" name="character" value="Spongebob" />
-          <label for="Spongebob">Spongebob</label><br />
+          Spongebob<br />
           <input type="radio" name="character" value="Sandy" />
           Sandy<br />
           <input type="radio" name="character" value="Patrick" />
-          <label for="Patrick">Patrick</label><br />
+          Patrick<br />
         </fieldset>
+        <br />
         <fieldset>
           <legend>Are you a fan of the show?</legend>
           <input type="checkbox" name="fan" value="yes" />
-          Yes, I have watched all episodes!
+          Yes, I have watched all episodes! <br />
           <input type="checkbox" name="fan" value="no" />
           No, not really.
         </fieldset>
+        <br />
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
       </form>
