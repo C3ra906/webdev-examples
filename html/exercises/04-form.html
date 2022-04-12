@@ -10,40 +10,56 @@
     <main>
       <form action="">
         <h1>Form</h1>
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Full Name"
-        /><br />
-        <label for="email">Email:</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="name@pdx.edu"
-        /><br /><br />
+        <div>
+          <label for="username">Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Full Name"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+        <br />
         <fieldset>
           <legend>Favorite Character</legend>
-          <input type="radio" name="character" value="Spongebob" />
-          Spongebob<br />
-          <input type="radio" name="character" value="Sandy" />
-          Sandy<br />
-          <input type="radio" name="character" value="Patrick" />
-          Patrick<br />
+          <input
+            type="radio"
+            id="spongebob"
+            name="character"
+            value="spongebob"
+          />
+          <label for="spongebob">Spongebob</label>
+          <br />
+          <input type="radio" id="sandy" name="character" value="sandy" />
+          <label for="sandy">Sandy</label>
+          <br />
+          <input type="radio" id="patrick" name="character" value="patrick" />
+          <label for="patrick">Patrick</label>
+          <br />
         </fieldset>
         <br />
         <fieldset>
           <legend>Are you a fan of the show?</legend>
-          <input type="checkbox" name="fan" value="yes" />
-          Yes, I have watched all episodes! <br />
-          <input type="checkbox" name="fan" value="no" />
-          No, not really.
+          <input type="checkbox" id="yes" name="fan" value="yes" />
+          <label for="yes">Yes, I have watched all episodes!</label>
+          <br />
+          <input type="checkbox" id="no" name="fan" value="no" />
+          <label for="no">No, not really.</label>
         </fieldset>
         <br />
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
