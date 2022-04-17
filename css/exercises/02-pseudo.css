@@ -3,10 +3,12 @@
   margin: 40px auto;
 }
 
-p::first-letter{ /*pseudo-element */
-font-size: 3em;
+p::first-letter {
+  /*pseudo-element */
+  font-size: 3em;
 }
 
-p:hover{ /*pseudo-lass*/
+p:hover {
+  /*pseudo-lass*/
   background-color: lightskyblue;
 }
