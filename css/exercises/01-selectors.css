@@ -10,31 +10,29 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
+li[class] { /*existence*/
   color: var(--red);
 }
 
-li[class*="do"]{
+li[class*='do']{ /*substring*/
   color: var(--royalblue)
 }
 
-li[class$="g"] {
+li[class$='g'] { /*subfix*/
   color: var(--violet);
 }
 
-li[id="cat"]{
+li[id='cat']{ /*equality*/
   color: var(--teal);
 }
 
-li[class="parrot"]{
+li[class^='p']{ /*prefix*/
   color: var(--green);
 }
 
-
-
 /* Use descendant, child, and sibling selectors for the second part */
 
-section li {
+section li { /*any descendent of type li of section*/
   color: var(--green);
 }
 
@@ -46,11 +44,11 @@ section li {
   color: var(--darkmagenta);
 }
 
-.second ~ li {
+.second ~ li { /*all siblings of second class*/
   color: var(--darkmagenta);
 }
 
-.second + li {
+.second + li { /*second class's immediate sibling*/
   color: var(--royalblue);
 }
 
