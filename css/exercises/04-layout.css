@@ -9,7 +9,8 @@ body {
 header,
 section,
 aside {
-  box-sizing: content-box;
+  box-sizing: border-box; /*content-box: width of content+padding+border*/
+  /*border-box: 75% accounts for padding and border*/
   padding: 10px;
   border: 4px solid var(--black);
 }
@@ -25,7 +26,7 @@ section {
   background-color: var(--orange);
 }
 
-aside {
+aside {  
   float: right;
   width: 25%;
   height: 300px;
