@@ -11,7 +11,8 @@ copy.addEventListener("click", handleClick);
 
 // callback function to handle event
 function handleClick(event) {
-  output.textContent - userInput.value;
+  console.log("click event", event);
+  output.textContent = userInput.value;
 }
 // Exercise #2:
 // when the user enters input text, copy the user input to the output area
@@ -20,7 +21,7 @@ function handleClick(event) {
 let userInput2 = document.querySelector("#userInput2");
 
 // add an event listener on the target element
-userInput2.addEventListener("input", handleClick);
+userInput2.addEventListener("input", handleInput);
 
 let section = document.querySelector("#inputEventExample");
 let element = document.createElement("div");
@@ -29,6 +30,6 @@ section.append(element);
 
 // callback function to handle event
 function handleInput(event) {
-  console.log(userInput2.value);
+  console.log("click event", event);
   element.textContent = userInput2.value;
 }
